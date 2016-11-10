@@ -35,7 +35,7 @@ targetCompatibility = 1.8
 // Maven Artefacts Info
 group = "fr.ourten"
 archivesBaseName = "hermod"
-version = "0.3.3"
+version = "0.1.0"
 
 dependencies {
 	compile "com.google.guava:guava:19.0"
