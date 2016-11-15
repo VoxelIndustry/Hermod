@@ -1,4 +1,4 @@
-package fr.ourten.hermod;
+package org.yggard.hermod;
 
 @FunctionalInterface
 public interface EventHandler<T extends HermodEvent>

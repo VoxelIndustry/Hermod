@@ -1,4 +1,4 @@
-package fr.ourten.hermod;
+package org.yggard.hermod;
 
 /**
  * @author Ourten 31 oct. 2016

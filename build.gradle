@@ -33,7 +33,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 // Maven Artefacts Info
-group = "fr.ourten"
+group = "org.yggard"
 archivesBaseName = "hermod"
 version = "0.1.0"
 
@@ -51,7 +51,7 @@ artifactory {
     contextUrl = "${artifactory_contextUrl}"
     publish {
         repository {
-            repoKey = 'ourten'
+            repoKey = 'yggard'
             username = "${artifactory_user}"
             password = "${artifactory_password}"
             maven = true

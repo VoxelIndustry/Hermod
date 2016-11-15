@@ -1,4 +1,4 @@
-package fr.ourten.hermod;
+package org.yggard.hermod;
 
 public class HermodEvent
 {

@@ -1,11 +1,10 @@
-package fr.ourten.hermod.test;
-
-import fr.ourten.hermod.EventType;
-import fr.ourten.hermod.HermodEvent;
+package org.yggard.hermod.test;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.yggard.hermod.EventType;
+import org.yggard.hermod.HermodEvent;
 
 public class TestEventType
 {

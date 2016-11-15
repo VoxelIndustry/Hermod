@@ -1,11 +1,10 @@
-package fr.ourten.hermod.test;
-
-import fr.ourten.hermod.EventDispatcher;
-import fr.ourten.hermod.HermodEvent;
-import fr.ourten.hermod.IEventEmitter;
+package org.yggard.hermod.test;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.yggard.hermod.EventDispatcher;
+import org.yggard.hermod.HermodEvent;
+import org.yggard.hermod.IEventEmitter;
 
 public class TestHermodEvent
 {
