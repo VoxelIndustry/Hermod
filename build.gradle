@@ -35,10 +35,9 @@ targetCompatibility = 1.8
 // Maven Artefacts Info
 group = "org.yggard"
 archivesBaseName = "hermod"
-version = "0.1.0"
+version = "0.1.1"
 
 dependencies {
-	compile "com.google.guava:guava:19.0"
 	testCompile "junit:junit:4.12"
 }
 

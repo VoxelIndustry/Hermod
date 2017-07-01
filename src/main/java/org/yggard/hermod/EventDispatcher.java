@@ -2,15 +2,13 @@ package org.yggard.hermod;
 
 import java.util.HashMap;
 
-import com.google.common.collect.Maps;
-
 public class EventDispatcher
 {
     private final HashMap<EventType<? extends HermodEvent>, EventHandlerWrapper<? extends HermodEvent>> handlers;
 
     public EventDispatcher()
     {
-        this.handlers = Maps.newHashMap();
+        this.handlers = new HashMap<>();
     }
 
     public void dispatchEvent(final EventType<? extends HermodEvent> type, final HermodEvent event)

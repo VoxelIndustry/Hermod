@@ -1,8 +1,7 @@
 package org.yggard.hermod;
 
+import java.util.ArrayList;
 import java.util.List;
-
-import com.google.common.collect.Lists;
 
 public class EventHandlerWrapper<T extends HermodEvent>
 {
@@ -10,7 +9,7 @@ public class EventHandlerWrapper<T extends HermodEvent>
 
     public EventHandlerWrapper()
     {
-        this.eventHandlers = Lists.newArrayList();
+        this.eventHandlers = new ArrayList<>();
     }
 
     @SuppressWarnings("unchecked")
