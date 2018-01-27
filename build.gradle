@@ -14,7 +14,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.0.0"
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.6.1"
     }
 }
 
@@ -35,7 +35,7 @@ targetCompatibility = 1.8
 // Maven Artefacts Info
 group = "org.yggard"
 archivesBaseName = "hermod"
-version = "0.1.1"
+version = "0.1.2"
 
 dependencies {
 	testCompile "junit:junit:4.12"
