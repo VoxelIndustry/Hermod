@@ -1,14 +1,14 @@
 package org.yggard.hermod;
 
-import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class EventDispatcher
 {
-    private final HashMap<EventType<? extends HermodEvent>, EventHandlerWrapper<? extends HermodEvent>> handlers;
+    private final ConcurrentHashMap<EventType<? extends HermodEvent>, EventHandlerWrapper<? extends HermodEvent>> handlers;
 
     public EventDispatcher()
     {
-        this.handlers = new HashMap<>();
+        this.handlers = new ConcurrentHashMap<>();
     }
 
     public void dispatchEvent(final EventType<? extends HermodEvent> type, final HermodEvent event)
