@@ -1,4 +1,4 @@
-package org.yggard.hermod;
+package net.voxelindustry.hermod;
 
 public class HermodEvent
 {

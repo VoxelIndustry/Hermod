@@ -1,4 +1,4 @@
-package org.yggard.hermod;
+package net.voxelindustry.hermod;
 
 /**
  * @author Ourten 31 oct. 2016

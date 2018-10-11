@@ -1,4 +1,4 @@
-package org.yggard.hermod;
+package net.voxelindustry.hermod;
 
 import java.util.concurrent.ConcurrentHashMap;
 

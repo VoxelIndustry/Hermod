@@ -1,10 +1,10 @@
-package org.yggard.hermod.test;
+package net.voxelindustry.hermod.test;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.yggard.hermod.EventType;
-import org.yggard.hermod.HermodEvent;
+import net.voxelindustry.hermod.EventType;
+import net.voxelindustry.hermod.HermodEvent;
 
 public class TestEventType
 {
