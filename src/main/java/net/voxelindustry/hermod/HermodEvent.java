@@ -1,6 +1,6 @@
 package net.voxelindustry.hermod;
 
-public class HermodEvent
+public abstract class HermodEvent
 {
     private final IEventEmitter source;
 
@@ -13,4 +13,11 @@ public class HermodEvent
     {
         return this.source;
     }
+
+    public HermodEvent copy()
+    {
+        return this.copy(source);
+    }
+
+    public abstract HermodEvent copy(IEventEmitter source);
 }
