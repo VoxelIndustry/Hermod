@@ -36,7 +36,7 @@ targetCompatibility = 1.8
 // Maven Artefacts Info
 group = "net.voxelindustry"
 archivesBaseName = "hermod"
-version = "1.0.0"
+version = "2.0.0"
 
 dependencies {
 	testCompile "junit:junit:4.12"
