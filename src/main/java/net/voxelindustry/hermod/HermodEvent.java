@@ -2,21 +2,62 @@ package net.voxelindustry.hermod;
 
 public abstract class HermodEvent
 {
-    private final IEventEmitter source;
+    public static final EventHandler<?> CONSUME_HANDLER = HermodEvent::consume;
 
-    public HermodEvent(final IEventEmitter source)
+    private       IEventEmitter source;
+    private final IEventEmitter target;
+
+    private boolean consumed;
+    private boolean filtered;
+
+    public HermodEvent(final IEventEmitter target)
     {
-        this.source = source;
+        this.target = target;
+    }
+
+    public void consume()
+    {
+        consumed = true;
+    }
+
+    public boolean isConsumed()
+    {
+        return consumed;
+    }
+
+    void setFiltered()
+    {
+        filtered = true;
+    }
+
+    public boolean isFiltered()
+    {
+        return filtered;
+    }
+
+    public IEventEmitter getTarget()
+    {
+        return target;
     }
 
     public IEventEmitter getSource()
     {
-        return this.source;
+        return source;
+    }
+
+    public HermodEvent setSource(final IEventEmitter source)
+    {
+        this.source = source;
+        return this;
     }
 
     public HermodEvent copy()
     {
-        return this.copy(source);
+        final HermodEvent copy = copy(source);
+        if (isConsumed())
+            copy.consume();
+
+        return copy;
     }
 
     public abstract HermodEvent copy(IEventEmitter source);

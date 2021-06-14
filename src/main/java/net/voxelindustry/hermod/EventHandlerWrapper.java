@@ -9,28 +9,31 @@ public class EventHandlerWrapper<T extends HermodEvent>
 
     public EventHandlerWrapper()
     {
-        this.eventHandlers = new ArrayList<>();
+        eventHandlers = new ArrayList<>();
     }
 
     @SuppressWarnings("unchecked")
     public void handle(final HermodEvent event)
     {
         final T internalEvent = (T) event;
-        this.eventHandlers.forEach(handler -> handler.handle(internalEvent));
+        for (final EventHandler<? super T> handler : eventHandlers)
+        {
+            handler.handle(internalEvent);
+        }
     }
 
     public void addHandler(final EventHandler<? super T> handler)
     {
-        this.eventHandlers.add(handler);
+        eventHandlers.add(handler);
     }
 
     public void removeHandler(final EventHandler<? super T> handler)
     {
-        this.eventHandlers.remove(handler);
+        eventHandlers.remove(handler);
     }
 
     public boolean containsHandler(final EventHandler<? super T> handler)
     {
-        return this.eventHandlers.contains(handler);
+        return eventHandlers.contains(handler);
     }
 }
